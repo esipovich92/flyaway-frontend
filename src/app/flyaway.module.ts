@@ -1,18 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+import { FlyawayComponent } from './flyaway.component';
 import { PlaneDetailsComponent } from './components/planes/plane-details/plane-details.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    FlyawayComponent,
     PlaneDetailsComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [FlyawayComponent]
 })
-export class AppModule { }
+export class FlyawayModule { }
