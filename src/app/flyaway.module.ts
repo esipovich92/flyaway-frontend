@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { FlyawayComponent } from './flyaway.component';
 import { PlaneDetailsComponent } from './components/planes/plane-details/plane-details.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PlanesService } from './components/planes/planes.service';
 
 @NgModule({
   declarations: [
@@ -10,9 +12,10 @@ import { PlaneDetailsComponent } from './components/planes/plane-details/plane-d
     PlaneDetailsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [PlanesService],
   bootstrap: [FlyawayComponent]
 })
 export class FlyawayModule { }
