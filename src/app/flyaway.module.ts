@@ -5,11 +5,13 @@ import { FlyawayComponent } from './flyaway.component';
 import { PlaneDetailsComponent } from './components/planes/plane-details/plane-details.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PlanesService } from './components/planes/planes.service';
+import { FormsTextComponent } from './inputs/forms-text.component';
 
 @NgModule({
   declarations: [
     FlyawayComponent,
-    PlaneDetailsComponent
+    PlaneDetailsComponent,
+    FormsTextComponent
   ],
   imports: [
     BrowserModule,
