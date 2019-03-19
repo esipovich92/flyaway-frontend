@@ -9,3 +9,9 @@ export class PlanePointer {
   capacity: number;
   maxDistance: number;
 }
+
+export class AddPlaneRequest {
+  model: string;
+  capacity: number;
+  maxDistance: number;
+}
